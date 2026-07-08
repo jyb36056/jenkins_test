@@ -8,11 +8,14 @@
             Git
             GitHub
             Pipeline
-            Go（可选）
 
 第四步：创建Job
        配置 GitHub
        配置构建步骤（Build Steps —— Execute shell）
 
-第五步：开始构建（Build Now）
+第五步：构建有go环境的jenkins镜像
+       Dockerfile
+       docker-compose.yml
+
+第六步：开始构建（Build Now）
 

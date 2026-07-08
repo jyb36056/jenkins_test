@@ -1,0 +1,20 @@
+services:
+  jenkins:
+    build:
+      context: .
+    image: my-jenkins-go:latest
+
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+
+    volumes:
+      - D:/package/Jenkins:/var/jenkins_home
+      - D:/code/go/test/jenkins_test:/workspace
+      - /var/run/docker.sock:/var/run/docker.sock
+
+    environment:
+      - JAVA_OPTS=-Djenkins.install.runSetupWizard=false
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
