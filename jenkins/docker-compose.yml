@@ -1,7 +1,7 @@
 services:
   jenkins:
     build:
-      context: ..
+      context: .
     image: my-jenkins-go:latest
 
     ports:
