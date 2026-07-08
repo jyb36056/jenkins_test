@@ -10,7 +10,7 @@
             Pipeline
 
 第四步：创建Job
-       配置 GitHub（GitHub项目 + Source Code Management）
+       配置 GitHub
        配置构建步骤（Build Steps —— Execute shell）
             pwd
             ls
