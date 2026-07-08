@@ -12,6 +12,12 @@
 第四步：创建Job
        配置 GitHub
        配置构建步骤（Build Steps —— Execute shell）
+            pwd
+            ls
+            go version
+            go mod tidy
+            go build
+            ls
 
 第五步：构建有go环境的jenkins镜像
        Dockerfile
